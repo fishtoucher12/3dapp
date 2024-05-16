@@ -1,0 +1,618 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+*/
+body {
+    background: linear-gradient( 45deg, rgba(255,0,0,0.8), rgba(255, 255, 255, 0) 70.71%), 
+    linear-gradient(180deg, rgba(0,255,0,0.8), rgba(255, 255, 255, 0) 70.71%),
+    linear-gradient(315deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0) 70.71%);
+
+    }
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Some simple CSS rules for styling p, h1 to h6, etc. in the main
+content’s container 
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}*/
+#home {
+    background-image: url(../assets/images/site_images/main_3D.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* The div block for the main_3d_image has no vertical size,
+    so we need a height to see the background image */
+    height: auto;
+}
+#homeimg1 {
+    opacity:0.2;
+    background-color: transparent;
+}
+#homeimg1:hover {
+    opacity:1.0;
+    background-color: transparent;
+}
+#homeimg2 {
+    opacity:0.2;
+    background-color: transparent;
+    max-width:280px;
+}
+#homeimg2:hover {
+    opacity:1.0;
+    background-color: transparent;
+    max-width:280px;
+}
+#about{
+    padding-top: 10%;
+    padding-left: 10%;
+    margin-bottom: 80%;
+}
+
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+X3D, x3d {
+    width: 100%;
+    height: 100%;
+}
+
+.homeText p,
+.homeText h2,
+.homeText h3{
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 5px;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}   
+
+/* CSS rule to style the mobile logo */
+.logo {
+    margin-top: 3px;
+}
+.logo h1 {
+    font-family: cocaColaFont; 
+    font-size: 31px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+.logo h2 {
+    font-family: cocaColaFont;
+    font-size: 31px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+}
+.logo h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+}
+.logo p {
+    font-size: 7px; /* You may have to tweak this to get a good fit */
+    margin-top: 22px; /* You may have to tweak this to get a good fit */
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+}    
+
+
+/* New CSS rules to better position the navbar and increase its height,
+Bootstrap defaults tend to make your site look like a Bootstrap clone!
+*/
+/* CSS rule to overwrite the navbar background and border color — again,
+helps to stop your site looking like a Bootstrap clone!
+*/
+.navbar_coca_cola {
+    background-color: transparent; /* Set navbar background color */
+    /* border-color: yellow; Sets the navbar border color */
+    /* border-style: solid; */
+    border-width: 0px;
+    min-height: 70px;
+}
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar_coca_cola .navbar-brand {
+color: rgb(0, 0, 0);
+}
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_coca_cola .navbar-brand:hover {
+color: #760003;
+}
+
+
+
+/* NAVIGATION MENU
+*/
+/* CSS rules to overwrite the position of the Bootstrap menu. These are
+derived from the
+Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and
+Buttons shows how to do this using Bootstrap 3, the principle should be the
+same: https://www.youtube.com/watch?v=7v2yC3GyDHU
+There is plenty more styling to do than indicated here, in mobile it still
+defaults to Bootstrap CSS on dropdown!
+*/
+
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+color: #760003;
+}
+.navbar-nav > li > a {
+    color: white;
+    font-size: 10px;
+}
+.navbar-nav .nav-item {
+margin-top: 0px;
+}
+/* CSS rule to overwrite the bootstrap.css rules for setting the active
+font color and background colour
+*/
+.navbar_coca_cola .navbar-nav .nav-item > .active,
+.navbar_coca_cola .navbar-nav > .active > a:hover,
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+color: #760003; /* Font color for active font */
+background-color: #3399ff; /* Blue color for background */
+}
+/* A set of CSS rules to change the Bootstrap defaults for the menu link
+text color, hover, background, focus
+*/
+
+
+.navbar_coca_cola .navbar-toggler {
+    border-color: white;
+}
+.navbar_coca_cola .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Let's style the dropdown menu
+*/
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #b6e7f3;
+    margin-top: 20px; /* Experiment to move the dropdown menu down */
+}
+.dropdown-menu .dropdown-item {
+    color: #eb0025;
+}
+.dropdown-menu .dropdown-item:hover {
+    color: #030303;
+    background-color: #e98074;
+}
+
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+    
+/* CSS rule to style the footer */
+.footer {
+    color: #030303;
+    background-color: transparent; /* Set navbar footer background color same asheader */
+    height: 50px;
+}
+.navbar-text > a {
+    font-size: 10px;
+}
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+.copyright {
+    padding-top: 8px;
+}
+.social {
+    padding-top: 0px;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 0px solid ;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery .img-thumbnail{
+    padding: 0.25rem;
+    background-color: transparent;
+    margin: 5px;
+    max-width:44%;
+    height: auto;
+}
+
+/* Lifted form the bootsrap.css file, and modified to emulate the nav-bar
+menu styling */
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #760003; /* Font color for active font */
+    background-color: #3399ff; /* Blue color for background */
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-tabs .nav-link {
+    color: white;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+/* Added this to emulate the nav-bar link styling */
+.nav-tabs .nav-link:hover {
+    color: #760003;
+    border: 1px solid transparent;
+}
+
+
+.gallery-header {
+    color: white;
+}
+
+.gallery-header:hover {
+    color: blue;
+    border: 1px splid transparent;
+}
+
+.model3D {
+    height: 200px;
+}
+
+.controlButton{
+    background-color: #868e96;
+    color: #fff;
+}
+
+.copyright {
+    padding-top: 20px;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .logo {
+        margin-top: 5px;
+    }
+    .logo h1 {
+        font-size: 40px;
+    }
+    .logo h2 {
+        font-size: 40px;
+    }
+    .logo h3 {
+        font-size: 20px;
+    }
+    .logo p {
+        font-size: 15px; 
+        margin-top: 32px; 
+    }
+    .navbar-text > p {
+        font-size: 20px;
+    }
+
+    .navbar-nav > li > a {
+        font-size: 15px;
+    }
+    #navbarSupportedContent{
+        margin-top: 10px;
+    }
+    #main_text h2 {
+        font-size: 20px;
+    }
+    #main_text h3 {
+        font-size: 18px;
+    }
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .homeText p{
+        font-size: 15px;
+    }
+    .homeText h2{
+        font-size: 20px;
+    }
+    .homeText h3{
+        font-size: 18px;
+    }
+    .nav-tabs .nav-link {
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .model3D {
+        height: 430px;
+    }
+
+    .card-Title h5{
+        font-size: 20px;
+    }
+
+    .controlButton{
+        font-size: 15px;
+    }
+
+    .align-baseline{
+        font-size: 18px;
+    }
+
+  }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .logo {
+        margin-top: 5px;
+    }
+    .logo h1 {
+        font-size: 50px;
+    }
+    .logo h2 {
+        font-size: 50px;
+    }
+    .logo h3 {
+        font-size: 30px;
+    }
+    .logo p {
+        font-size: 15px; 
+        margin-top: 42px; 
+    }
+    .navbar-text > p {
+        font-size: 20px;
+    }
+
+    .navbar-nav > li > a {
+        font-size: 18px;
+    }
+    #navbarSupportedContent{
+        margin-top: 10px;
+        margin-right: 0%;
+    }
+    #main_text h2 {
+        font-size: 25px;
+    }
+    #main_text h3 {
+        font-size: 20px;
+    }
+    #main_text p {
+        font-size: 17px;
+    }
+
+    .homeText p{
+        font-size: 17px;
+    }
+    .homeText h2{
+        font-size: 25px;
+    }
+    .homeText h3{
+        font-size: 20px;
+    }
+    .nav-tabs .nav-link {
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    .model3D {
+        height: 450px;
+    }
+
+    .card-Title h5{
+        font-size: 23px;
+    }
+
+    .controlButton{
+        font-size: 18px;
+    }
+
+    .align-baseline{
+        font-size: 20px;
+    }
+    
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .logo {
+        margin-top: 5px;
+    }
+    .logo h1 {
+        font-size: 60px;
+    }
+    .logo h2 {
+        font-size: 60px;
+    }
+    .logo h3 {
+        font-size: 40px;
+    }
+    .logo p {
+        font-size: 15px; 
+        margin-top: 52px; 
+    }
+    .navbar-text > p {
+        font-size: 20px;
+    }
+
+    .navbar-nav > li > a {
+        font-size: 20px;
+    }
+    #navbarSupportedContent{
+        margin-top: 10px;
+        margin-right: 5%;
+    }
+    #main_text h2 {
+        font-size: 27px;
+    }
+    #main_text h3 {
+        font-size: 23px;
+    }
+    #main_text p {
+        font-size: 19px;
+    }
+
+    .homeText p{
+        font-size: 19px;
+    }
+    .nav-tabs .nav-link {
+        font-size: 20px;
+    }
+
+    .nav-tabs .nav-link:hover {
+        border: 1px solid transparent;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .model3D {
+        height: 500px;
+    }
+
+    .card-Title h5{
+        font-size: 25px;
+    }
+
+    .controlButton{
+        font-size: 20px;
+    }
+
+    .align-baseline{
+        font-size: 30px;
+    }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .logo {
+        margin-top: 7px;
+    }
+    .logo h1 {
+        font-size: 70px;
+    }
+    .logo h2 {
+        font-size: 70px;
+    }
+    .logo h3 {
+        font-size: 50px;
+    }
+    .logo p {
+        font-size: 20px; /* You may have to tweak this to get a good fit */
+        margin-top: 72px; /* You may have to tweak this to get a good fit */
+    }
+    .navbar-text > p {
+        font-size: 30px;
+    }
+
+    .navbar-nav > li > a {
+        font-size: 20px;
+    }
+    #navbarSupportedContent{
+        margin-top: 10px;
+        margin-right: 10%;
+    }
+    #main_text h2 {
+        font-size: 30px;
+    }
+    #main_text h3 {
+        font-size: 25px;
+    }
+    #main_text p {
+        font-size: 20px;
+    }
+
+    .homeText p{
+        font-size: 25px;
+    }
+    .nav-tabs .nav-link {
+        font-size: 25px;
+    }
+    /* Added this to emulate the nav-bar link styling */
+    .nav-tabs .nav-link:hover {
+        border: 1px solid transparent;
+    }
+
+    p{
+        font-size: 30px;
+    }
+
+    .model3D {
+        height: 600px;
+    }
+
+    .card-Title h5{
+        font-size: 25px;
+    }
+
+    .controlButton{
+        font-size: 20px;
+    }
+
+    .align-baseline{
+        font-size: 30px;
+    }
+
+}
+
+/* Method to declare your own fonts */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+    }
+
